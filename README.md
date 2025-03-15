@@ -13,11 +13,6 @@ g:\PTTK\
 │   └── pages/       # Pages - Chứa các trang HTML của ứng dụng
 ├── docs/            # Documentation - Chứa tài liệu hướng dẫn, tham khảo
 └── tests/           # Tests - Chứa các file kiểm thử
-
-Quy ước đặt tên thư mục:
-- Dùng tên ngắn gọn, có ý nghĩa rõ ràng
-- Viết thường, phân tách bằng dấu gạch ngang nếu có nhiều từ
-- Tên thể hiện đúng mục đích, nội dung của thư mục
 ```
 
 ## Core Modules
