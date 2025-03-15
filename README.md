@@ -3,7 +3,7 @@
 ## Cấu trúc thư mục và ý nghĩa
 
 ```
-g:\PTTK\
+main/
 ├── src/              # Source code - Chứa mã nguồn chính của ứng dụng
 │   ├── js/          # JavaScript - Chứa mã xử lý, logic của ứng dụng
 │   │   ├── core/    # Core - Chứa các chức năng cốt lõi, nền tảng
