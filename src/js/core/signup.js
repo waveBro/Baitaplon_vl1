@@ -11,23 +11,39 @@ class SignupManager {
     this.setupPasswordToggle();
     this.setupGoogleSignup();
   }
-
   setupPasswordToggle() {
+    // Setup for main password input
     const passwordInput = document.getElementById('password');
-    const toggleBtn = document.createElement('i');
-    toggleBtn.className = 'fas fa-eye password-toggle';
-    passwordInput?.parentElement?.appendChild(toggleBtn);
-
-    toggleBtn.onclick = () => {
-      if (passwordInput.type === 'password') {
-        passwordInput.type = 'text';
-        toggleBtn.className = 'fas fa-eye-slash password-toggle';
-      } else {
-        passwordInput.type = 'password';
-        toggleBtn.className = 'fas fa-eye password-toggle';
-      }
+    const passwordToggleBtn = document.createElement('i');
+    passwordToggleBtn.className = 'fas fa-eye password-toggle';
+    passwordInput?.parentElement?.appendChild(passwordToggleBtn);
+ 
+    passwordToggleBtn.onclick = () => {
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            passwordToggleBtn.className = 'fas fa-eye-slash password-toggle';
+        } else {
+            passwordInput.type = 'password';
+            passwordToggleBtn.className = 'fas fa-eye password-toggle';
+        }
     };
-  }
+ 
+    // Setup for confirm password input
+    const confirmPasswordInput = document.getElementById('confirmPassword');
+    const confirmPasswordToggleBtn = document.createElement('i');
+    confirmPasswordToggleBtn.className = 'fas fa-eye password-toggle';
+    confirmPasswordInput?.parentElement?.appendChild(confirmPasswordToggleBtn);
+ 
+    confirmPasswordToggleBtn.onclick = () => {
+        if (confirmPasswordInput.type === 'password') {
+            confirmPasswordInput.type = 'text';
+            confirmPasswordToggleBtn.className = 'fas fa-eye-slash password-toggle';
+        } else {
+            confirmPasswordInput.type = 'password';
+            confirmPasswordToggleBtn.className = 'fas fa-eye password-toggle';
+        }
+    };
+}
 
   setupGoogleSignup() {
     const googleBtn = document.getElementById('googleSignUpBtn');
